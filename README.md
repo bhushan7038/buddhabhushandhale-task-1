@@ -24,7 +24,7 @@ We assume all candidates are using modern AI tools (ChatGPT, Claude, Copilot, et
 | Layer    | Technology                      |
 | -------- | ------------------------------- |
 | Frontend | React 18 + Vite 5 (JavaScript) |
-| Backend  | Spring Boot 3.2 + Java 17      |
+| Backend  | Spring Boot 3.2 + Java 25      |
 | Database | H2 (in-memory, zero setup)     |
 | SQL ref  | Oracle PL/SQL artifact in `db/` |
 
@@ -85,7 +85,7 @@ Be honest and specific. We value self-awareness over perfection.
 
 ### Prerequisites
 
-- **Java 17+** (run `java --version` to check)
+- **Java 25+** (run `java --version` to check)
 - **Node.js 18+** (run `node --version` to check)
 - No Docker required. No external database required.
 
@@ -198,7 +198,7 @@ After we review your submission, we will schedule a short call. Be ready to disc
 ## Troubleshooting
 
 **Backend won't start**
-- Ensure Java 17+ is installed: `java --version`
+- Ensure Java 25+ is installed: `java --version`
 - On macOS, if you get `Permission denied`, run: `chmod +x backend/mvnw`
 - On Windows, use `mvnw.cmd` instead of `./mvnw`
 - Check that port 8080 is free: `lsof -i :8080` (macOS/Linux) or `netstat -ano | findstr :8080` (Windows)
